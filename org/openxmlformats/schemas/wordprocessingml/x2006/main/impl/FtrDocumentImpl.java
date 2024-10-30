@@ -1,0 +1,53 @@
+package org.openxmlformats.schemas.wordprocessingml.x2006.main.impl;
+
+import javax.xml.namespace.b;
+import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.XmlObject;
+import org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHdrFtr;
+import org.openxmlformats.schemas.wordprocessingml.x2006.main.FtrDocument;
+
+public class FtrDocumentImpl extends XmlComplexContentImpl implements FtrDocument {
+  private static final b FTR$0 = new b("http://schemas.openxmlformats.org/wordprocessingml/2006/main", "ftr");
+  
+  public FtrDocumentImpl(SchemaType paramSchemaType) {
+    super(paramSchemaType);
+  }
+  
+  public CTHdrFtr getFtr() {
+    synchronized (monitor()) {
+      check_orphaned();
+      CTHdrFtr cTHdrFtr = null;
+      cTHdrFtr = (CTHdrFtr)get_store().find_element_user(FTR$0, 0);
+      if (cTHdrFtr == null)
+        return null; 
+      return cTHdrFtr;
+    } 
+  }
+  
+  public void setFtr(CTHdrFtr paramCTHdrFtr) {
+    synchronized (monitor()) {
+      check_orphaned();
+      CTHdrFtr cTHdrFtr = null;
+      cTHdrFtr = (CTHdrFtr)get_store().find_element_user(FTR$0, 0);
+      if (cTHdrFtr == null)
+        cTHdrFtr = (CTHdrFtr)get_store().add_element_user(FTR$0); 
+      cTHdrFtr.set((XmlObject)paramCTHdrFtr);
+    } 
+  }
+  
+  public CTHdrFtr addNewFtr() {
+    synchronized (monitor()) {
+      check_orphaned();
+      CTHdrFtr cTHdrFtr = null;
+      cTHdrFtr = (CTHdrFtr)get_store().add_element_user(FTR$0);
+      return cTHdrFtr;
+    } 
+  }
+}
+
+
+/* Location:              C:\Arremate\Arremate.jar!\org\openxmlformats\schemas\wordprocessingml\x2006\main\impl\FtrDocumentImpl.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

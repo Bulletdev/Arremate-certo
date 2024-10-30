@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="corpo">
+        <h2>CONSULTA DE PROPOSTA</h2>
+        <table width="100%" border="0" cellspacing="1" cellpadding="2">
+            <tr>
+                <td width="5" rowspan="3"><img src="../../imagens/x2_dot.gif" width="2" height="2" alt="" /></td>
+                <td><img src="../../imagens/x2_dot.gif" width="2" height="2" alt="" /></td>
+            </tr>
+            <tr>
+                <td class="tex3a"><img src="../../imagens/T_consulta_proposta.gif" width="172" height="23"
+                        align="absbottom" alt="" />&nbsp;</td>
+            </tr>
+            <tr>
+                <th nowrap="nowrap"><img src="../../imagens/risco2.gif" width="100%" height="3" alt="" /></th>
+            </tr>
+        </table>
+        <table border="0" cellspacing="1" cellpadding="2" width="100%">
+            <tr>
+                <td valign="top" align="right" width="23"><img src="../../imagens/tm_bullet.gif" width="6" height="14"
+                        alt="" /></td>
+                <td class="tex3">
+                    <p>Clique no número da licitação para ver detalhes.</p>
+                    <p>Exibir as propostas de pregões:
+                        <a class="tex3b" href="consultar.asp?tipo=agendados">Agendados</a>,
+                        <a class="tex3b" href="consultar.asp?tipo=andamento">Em Andamento</a>,
+                        <a class="tex3b" href="consultar.asp?tipo=homologados">Homologados</a>.
+                    </p>
+                    <p class="tex3b">Pregões Agendados</p>
+                    <table border="0" width="100%" cellpadding="2" cellspacing="1" class="td">
+                        <tr>
+                            <td width="12%"></td>
+                            <td width="15%" align="center" class="tex3b">Nº do Pregão</td>
+                            <td align="center" class="tex3b">Cód.da UASG <br /> (Unid. de Compra)</td>
+                            <td align="center" class="tex3b">Órgão</td>
+                            <td width="15%" align="center" class="tex3b">Data Abertura</td>
+                            <td align="center" class="tex3b">SRP</td>
+                            <td align="center" class="tex3b">ICMS</td>
+                        </tr>
+                        ##HTML_PREGOES##
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

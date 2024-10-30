@@ -1,0 +1,291 @@
+<html>
+<head>
+    <title>COMPRASNET - O SITE DE COMPRAS DO GOVERNO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="refresh" content="840" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="cache-control" content="private" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <style type="text/css">@import url("/imagens/style1.css");</style>
+    <style type="text/css">@import url("/pregao/css/corpo.css");</style>
+    <script type="text/javascript" src="../FormataEntrada.js" ,></script>
+    <script type="text/javascript" src="../ValidaPreench.js"></script>
+    <script type="text/javascript" src="/pregao/ChamadasPopupFornec.js"></script>
+    <link rel="stylesheet" href="../../imagens/style1.css" type="text/css" />
+    <script type="text/javascript">
+		function ConsultarPropGrupo(prgCod, ipgCod, nomeItem) {
+			var url = "Consulta_Proposta_Grupo.asp?prgCod="+prgCod+"&ipgCod="+ipgCod+"&nomeItem="+nomeItem
+			window.open (url,'PropGrupo','maximized=yes, screenX=250, screenY=0, toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no,width=790,height=550');
+			return false;
+		}
+
+		function IrParaItem() {
+		    var vMaiorPagina = parseInt('0');
+
+		    if (document.paginacao.txbIrPara.value != "") {
+		        var pagina = document.paginacao.txbIrPara.value;
+
+		        if (!parseInt(pagina)) {
+		            alert('Informe um número entre 1 e ' + vMaiorPagina);
+		            document.paginacao.txbIrPara.focus();
+		            return false;
+		        }
+
+		        if ((parseInt(pagina) > vMaiorPagina) || parseInt(pagina <= 0)) {
+		            alert('Informe um número entre 1 e ' + vMaiorPagina);
+		            document.paginacao.txbIrPara.focus();
+		            return false;
+		        }
+		        window.location.href = "consulta_proposta.asp?prgcod=758856&tipo=agendados&pagina=" + parseInt(pagina);
+		    }
+		}
+
+		function PaginarItens(strTipo) {
+
+		    var pagina = 0;
+		    var paginaAtual = parseInt('1');
+
+		    if (strTipo == "Proxima")
+		        pagina = paginaAtual + 1;
+		    else
+		        pagina = paginaAtual - 1;
+
+		    window.location.href = "consulta_proposta.asp?prgcod=758856&tipo=agendados&pagina=" + pagina;
+		}
+
+
+
+	</script>
+</head>
+<body onload="mostraAnexos();">
+<div id="corpo">
+    <h2>PROPOSTA</h2>
+    <table border="0" cellspacing="1" cellpadding="2" width="100%">
+        <tr>
+            <td valign="top" align="right" width="23">&nbsp;</td>
+            <td class="tex3" width="1000">
+                <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tex3">
+                    <tr>
+                        <td>
+                            <center>
+                                <span class="tex3">Governo do Estado do Maranhão</span><br /><span class="tex3">Prefeitura de São Luis - Maranhão</span><br /><p>
+                                <span class="tex3b">Pregão nº</span>
+                                <span class="mensagem">
+1712018
+</span>
+                                <span class="mensagem"> (SRP)</span>
+                            </p>
+                            </center>
+                            <br />
+                            <p class="tex3">
+                                <span class="tex3b">Objeto:</span>
+                                Objeto: Pregão Eletrônico -  Processo n¨ 040-20126/2018 Preços a serem registrados em Ata para prestação de serviços para CONFECÇÃO E REPRODUÇÃO DE MATERIAL GRÁFICO, para atender as necessidades do Centro de Referência em Saúde do Trabalhador.
+                            </p>
+                            <p class="tex3">
+                                <span class="tex3b">Modo de Disputa:</span>
+                                Aberto
+                            </p>
+
+                            Data e horário para início da entrega de propostas: 25/10/2018 08:00<br />
+                            <span class="mensagem2"> * </span>Data e horário limites para entrega de propostas: 08/11/2018 10:30<br />
+                            <span class="mensagem2"> * </span>Data e horário considerados para início da sessão pública.<br /><br />
+                        </td>
+                    </tr>
+                </table>
+
+                <br />
+                <table cellspacing="1" cellpading="2" cellpadding="2" width="98%" border="0">
+                    <tr class="tex3" bgcolor="#ffffff">
+                        <td colspan="10" class="mensagem">
+                            Declaro, sob as penas da Lei, que não ultrapassei o limite de faturamento e cumpro os requisitos estabelecidos
+                            no Art. 3º da Lei Complementar nº 123, de 14 de dezembro de 2006, sendo apto a usufruir do tratamento favorecido
+                            estabelecido nos artigos 42 ao 49 da referida Lei Complementar.
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table cellspacing="1" cellpading="2" cellpadding="2" class="td" width="98%" border="0">
+                    <tr class="tex3" bgcolor="#ffffff">
+                        <td colspan="10">Para ver a descrição complementar do item, clique na descrição do mesmo.</td>
+                    </tr>
+                    <tr class="tex3b">
+                        <td align="center" width="40px">Item </td>
+                        <td align="center">Descrição</td>
+                        <td align="center">Tratamento<br />Diferenciado</td>
+                        <td align="center">Aplicabilidade<br />Decreto 7174</td>
+                        <td align="center">Aplic. Margem<br />Preferência</td>
+                        <td align="center">Unid.<br />Fornec.</td>
+                        <td align="center">Qtd.<br />Estimada</td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                    </tr>
+                    <tr class="tex3" bgcolor="#FFFFFF">
+                        <td align="center" rowspan="1">
+                            G1
+                        </td>
+                        <td>
+                            <a href="#" onclick="DescrComplementar(20958968);">
+                                GRUPO 1</a>
+                        </td>
+                        <td align="center" class="tex3a" rowspan="1">
+                            -
+                        </td>
+                        <td align="center" class="tex3a">
+                            -	</td>
+                        <td align="center" class="tex3a">
+                            Não</td>
+                        <td align="center" colspan="4">
+                            <a href="#" OnClick="javascript:ConsultarPropGrupo(758856,20958968,'GRUPO 1');">
+                                Consultar Proposta do Grupo</a>
+                        </td>
+                        <td class="tex3a" align="center" nowrap="nowrap">
+                            <span class="tex1b">Valor Total (R$)</span>
+                            <br />
+                            247,0000
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <span class="legenda">
+	Tratamento Diferenciado Tipo I: Participação Exclusiva de ME/EPP <br/>
+	Tratamento Diferenciado Tipo II: Exigência de subcontratação de ME/EPP <br/>
+	Tratamento Diferenciado Tipo III: Cota para participação exclusiva de ME/EPP <br/>
+</span>
+
+
+                <br />
+
+            </td>
+            <td valign="top" align="right">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" align="right" width="23">&nbsp;</td>
+            <td class="tex3" width="1000">
+
+                <script language=Javascript>
+			    document.write ("<table border=0 width=100% cellpadding=5 cellspacing=1 class=td bordercolor=#000000><tr class=tex3 bgcolor=#ffffff><td width=80%>Declaro que estou ciente e concordo com as condições contidas no edital e seus anexos, bem como de que cumpro plenamente os requisitos de habilitação definidos no edital.</td>");
+			    document.write("<td><input type=radio name=checkCiencia id=checkCiencia disabled = true value=S checked = true>SIM</td>");
+				document.write("<td><input type=radio name=checkCiencia id=checkCiencia disabled = true value=N >NÃO</td></tr></table>");
+
+				document.write ("<table border=0 width=100% cellpadding=5 cellspacing=1 class=td bordercolor=#000000><tr class=tex3 bgcolor=#ffffff><td width=80%>Declaro sob as penas da lei, que até a presente data inexistem fatos impeditivos para a minha habilitação no presente processo licitatório, ciente da obrigatoriedade de declarar ocorrências posteriores.</td>");
+				document.write("<td><input type=radio name=checkSuperveniente id=checkSuperveniente disabled = true value=S checked = true >SIM</td>");
+				document.write("<td><input type=radio name=checkSuperveniente id=checkSuperveniente disabled = true value=N  >NÃO</td></tr></table>");
+
+				document.write ("<table border=0 width=100% cellpadding=5 cellspacing=1 class=td bordercolor=#000000><tr class=tex3 bgcolor=#ffffff><td width=80%>Declaro para fins do disposto no inciso V do art. 27 da Lei nº 8.666, de 21 de junho de 1993, acrescido pela Lei nº 9.854, de 27 de outubro de 1999, que não emprego menor de 18 (dezoito) anos em trabalho noturno, perigoso ou insalubre e não emprego menor de 16 (dezesseis) anos, salvo menor, a partir de 14 (quatorze) anos, na condição de aprendiz, nos termos do inciso XXXIII, do art. 7º da Constituição Federal.</td>");
+				document.write("<td><input type=radio name=checkInfantil id=checkInfantil disabled = true value=S checked = true >SIM</td>");
+				document.write("<td><input type=radio name=checkInfantil id=checkInfantil disabled = true value=N  >NÃO</td></tr></table>");
+
+				document.write ("<table border=0 width=100% cellpadding=5 cellspacing=1 class=td bordercolor=#000000><tr class=tex3 bgcolor=#ffffff><td width=80%>Declaro que a proposta apresentada para essa licitação foi elaborada de maneira independente, de acordo com o que é estabelecido na Instrução Normativa Nº 2 de 16 de setembro de 2009 da SLTI/MP.</br>")
+				document.write ("Clique <a href='#rodape' onClick='Proposta_Independente();'>aqui</a> para detalhamento dessa declaração.</td>");
+              	document.write("<td><input type=radio name=checkPropIndependente id=checkPropIndependente disabled = true value=S checked = true >SIM</td>");
+				document.write("<td><input type=radio name=checkPropIndependente id=checkPropIndependente disabled = true value=N  >NÃO</td></tr></table>");
+
+				document.write ("<table border=0 width=100% cellpadding=5 cellspacing=1 class=td bordercolor=#000000><tr class=tex3 bgcolor=#ffffff><td width=80%>Declaro que não possuo, em minha cadeia produtiva, empregados executando trabalho degradante ou forçado, observando o disposto nos incisos III e IV do art.1º e no inciso III do art.5º da Constituição Federal.</td>");
+				document.write("<td><input type=radio name=checkForcado id=checkForcado disabled = true value=S checked = true >SIM</td>");
+				document.write("<td><input type=radio name=checkForcado id=checkForcado disabled = true value=N  >NÃO</td></tr></table>");
+
+				document.write ("<table border=0 width=100% cellpadding=5 cellspacing=1 class=td bordercolor=#000000><tr class=tex3 bgcolor=#ffffff><td width=80%>Declaro que, conforme disposto no art. 93 da Lei nº 8.213, de 24 de julho de 1991, estou ciente do cumprimento da reserva de cargos prevista em lei para pessoa com deficiência ou para reabilitado da Previdência Social e que, se aplicado ao número de funcionários da minha empresa, atendo às regras de acessibilidade previstas na legislação.</td>");
+				document.write("<td><input type=radio name=checkAcessibilidade id=checkAcessibilidade disabled = true value=S checked = true >SIM</td>");
+				document.write("<td><input type=radio name=checkAcessibilidade id=checkAcessibilidade disabled = true value=N  >NÃO</td></tr></table>");
+
+				document.write ("<table border=0 width=100% cellpadding=5 cellspacing=1 class=td bordercolor=#000000><tr class=tex3 bgcolor=#ffffff><td width=80%>Declaro sob as penas da Lei, que cumpro a cota de aprendizagem nos termos estabelecidos no art. 429 da CLT.</td>");
+				document.write ("<td><input type=radio name=checkCotaAprendizagem id=checkCotaAprendizagem disabled = true value=S checked = true >SIM</td>");
+				document.write ("<td><input type=radio name=checkCotaAprendizagem id=checkCotaAprendizagem disabled = true value=N  >NÃO</td></tr></table>");
+
+	        </script>
+
+                <script language=Javascript>
+
+        	    function Proposta_Independente() {
+				    var url = "Declaracao_IndependProp.asp?prgCod=758856&prpCod=11678666";
+				    window.open(url, 'detalhe_proposta_independente', 'maximized=yes, screenX=0, screenY=0, toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no,width=750,height=500');
+				    return false;
+			    }
+			</script>
+
+            </td>
+            <td valign="top" align="right">&nbsp;</td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="right" width="23">&nbsp;</td>
+            <td class="tex3" width="1000">
+                <input type="button" name="voltar2" value="Voltar" class="texField2" onclick="location.href='Consultar.asp?tipo=agendados';return false;" />
+            </td>
+            <td valign="top" align="right">&nbsp;</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    var trSemAnexoH = '<tr class="mensagem" bgcolor="#ffffff" id="semAnexoH"><td colspan="3" align="center">Não existem anexos cadastrados.</td></tr>';
+    var trSemAnexoP = '<tr class="mensagem" bgcolor="#ffffff" id="semAnexoP"><td colspan="3" align="center">Não existem anexos cadastrados.</td></tr>';
+
+    function mostraAnexos() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                atualizaTabelaAnexos(this.responseText,'H');
+                if(document.getElementById("anexoProposta").contains(document.getElementById("semAnexoH")))
+                    document.getElementById("temAnexo").value = 0;
+                else
+                    document.getElementById("temAnexo").value = document.getElementsByName("anexoProposta")[0].childNodes.length;
+            }
+        };
+        xmlhttp.open("GET", "AnexoProposta.asp?prgCod=758856&prpCod=11678666&acao=V&tipo=H", true);
+        xmlhttp.setRequestHeader("Content-Type", "text/html");
+        xmlhttp.send();
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                atualizaTabelaAnexos(this.responseText,'P');
+                if(document.getElementById("anexoPropostaP").contains(document.getElementById("semAnexoP")))
+                    document.getElementById("temAnexoP").value = 0;
+                else
+                    document.getElementById("temAnexoP").value = document.getElementsByName("anexoPropostaP")[0].childNodes.length;
+            }
+        };
+        xmlhttp.open("GET", "AnexoProposta.asp?prgCod=758856&prpCod=11678666&acao=V&tipo=P", true);
+        xmlhttp.setRequestHeader("Content-Type", "text/html");
+        xmlhttp.send();
+    }
+
+    function atualizaTabelaAnexos(tabelaAnexos, tipoAnexo) {
+        var anexos = tipoAnexo=='H' ? "anexosProposta" : "anexosPropostaP";
+        var anexo = tipoAnexo=='H' ? "anexoProposta" : "anexoPropostaP";
+        var table = document.getElementById(anexos);
+
+        if (document.getElementById(anexo) !== null)
+            document.getElementById(anexo).remove();
+
+        var tb = document.createElement("tbody");
+        tb.setAttribute("name", anexo);
+        tb.setAttribute("id", anexo);
+        tb.innerHTML = retornaTabelaAnexos(tabelaAnexos, tipoAnexo);
+        table.appendChild(tb);
+    }
+
+    function retornaTabelaAnexos(xml, tipoAnexo) {
+        var i;
+        var xmlDoc;
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(xml,"text/xml");
+        var table="";
+        var x = xmlDoc.getElementsByTagName("Anexo");
+        if(x.length > 0) {
+            for (i = 0; i <x.length; i++) {
+                table += '<tr id="anexo' + x[i].getElementsByTagName("paCod")[0].childNodes[0].nodeValue +'" class="tex3" bgcolor="#ffffff">';
+                table += '<td><a href="downloadAnexoProposta.asp?paCod=' + x[i].getElementsByTagName("paCod")[0].childNodes[0].nodeValue + '">' + x[i].getElementsByTagName("paNome")[0].childNodes[0].nodeValue + '</a></td>';
+                table += '<td>' + x[i].getElementsByTagName("paData")[0].childNodes[0].nodeValue + '</td>';
+                table += '</tr>';
+            }
+        } else {
+            table += tipoAnexo=='H' ? trSemAnexoH : trSemAnexoP;
+        }
+        return table;
+    }
+</script>

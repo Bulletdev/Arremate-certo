@@ -1,0 +1,33 @@
+<tr class="tex3" bgcolor="#FFFFFF">
+    <td align="center" bgcolor="#FFFFFF" rowspan="1">
+        <img src="../../imagens/##ICONE##.gif" align="middle" width="16" height="16" />
+    </td>
+    <td align="center" rowspan="1">
+        <a href="#" onclick="Lista_Proposta(##CODIGO##,##NUMERO##);">
+            ##NUMERO##
+        </a>
+    </td>
+    <td align="center" rowspan="1" />
+    <td align="center">
+        <a href="#" onclick="Dados_Desc(##CODIGO##);">Descrição tanto faz</a>
+    </td>
+    <td align="center" rowspan="1">
+        ##SITUACAO##
+    </td>
+    <td align="right" nowrap="nowrap">
+        R$
+        <script>document.write(FormataValor4CasasDecimais('##ULTIMOLANCE##'));</script>
+    </td>
+    <td align="right" nowrap="nowrap">
+        R$ <a href="#" onclick="Visualiza_lance(##CODIGO##,##NUMERO##);">
+            <script>document.write(FormataValor4CasasDecimais('##MELHORLANCE##'));</script></a>
+    </td>
+    <td colspan="3" nowrap="nowrap" rowspan="1" />
+    <td>
+        <input type="hidden" name="ippCod" value="##CODIGO##" />
+        <input type="hidden" name="valormin" value="##ULTIMOLANCE##" />
+        <input type="hidden" name="menorlance" value="##MELHORLANCE##" />
+        <input type="hidden" name="formajulg" value="V" />
+        <input type="hidden" name="fatorEqualiz" value="" />
+    </td>
+</tr>

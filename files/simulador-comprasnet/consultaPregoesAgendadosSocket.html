@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>COMPRASNET - O SITE DE COMPRAS DO GOVERNO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="refresh" content="840" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="cache-control" content="private" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <style type="text/css">@import url("/imagens/style1.css");</style>
+    <style type="text/css">@import url("/pregao/css/corpo.css");</style>
+    <script language="javascript" type="text/javascript"  src="../FormataEntrada.js"></script>
+    <script language="JavaScript" type="text/javascript" >
+	    //<!--
+	    function Dados_Pregao(pCod) {
+	        var url = "dados_pregao.asp?prgcod=" + pCod
+	        window.open(url, 'Dados_Preg', 'maximized=yes, screenX=250, screenY=0, toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no,width=550,height=400');
+	        return false;
+	    }
+	    //-->
+	</script>
+</head>
+<body>
+<div id="corpo">
+    <h2>CONSULTA DE PROPOSTA</h2>
+    <table width="100%" border="0" cellspacing="1" cellpadding="2">
+        <tr>
+            <td width="5" rowspan="3"><img src="../../imagens/x2_dot.gif" width="2" height="2" alt="" /></td>
+            <td><img src="../../imagens/x2_dot.gif" width="2" height="2" alt="" /></td>
+        </tr>
+        <tr>
+            <td class="tex3a"><img src="../../imagens/T_consulta_proposta.gif" width="172" height="23" align="absbottom" alt="" />&nbsp;</td>
+        </tr>
+        <tr>
+            <th nowrap="nowrap"><img src="../../imagens/risco2.gif" width="100%" height="3" alt="" /></th>
+        </tr>
+    </table>
+    <table border="0" cellspacing="1" cellpadding="2" width="100%">
+        <tr>
+            <td valign="top" align="right" width="23"><img src="../../imagens/tm_bullet.gif" width="6" height="14" alt="" /></td>
+            <td class="tex3">
+                <p>Clique no número da licitação para ver detalhes.</p>
+                <p>Exibir as propostas de pregões:
+                    <a class="tex3b" href="consultar.asp?tipo=agendados">Agendados</a>,
+                    <a class="tex3b" href="consultar.asp?tipo=andamento">Em Andamento</a>,
+                    <a class="tex3b" href="consultar.asp?tipo=homologados">Homologados</a>.
+                </p>
+                <p class="tex3b">Pregões Agendados</p>
+                <table border="0" width="100%" cellpadding="2" cellspacing="1" class="td">
+                    <tr>
+                        <td width="12%"></td>
+                        <td width="15%" align="center" class="tex3b">Nº do Pregão</td>
+                        <td align="center" class="tex3b">Cód.da UASG <br /> (Unid. de Compra)</td>
+                        <td align="center" class="tex3b">Órgão</td>
+                        <td width="15%" align="center" class="tex3b">Data Abertura</td>
+                        <td align="center" class="tex3b">SRP</td>
+                        <td align="center" class="tex3b">ICMS</td>
+                    </tr>
+                    <tr class="tex3">
+                        <td bgcolor="#FFFFFF" align="center">
+                            <a href="#" onclick="javascript:consultaProposta(697772)">Consultar Proposta</a>
+                        </td>
+                        <td bgcolor="#FFFFFF" class="tex3a" align="center">
+                            <a href="#" onclick="javascript:Dados_Pregao(697772);">172017</a>
+                        </td>
+                        <td bgcolor="#FFFFFF" align="center">
+                            926142
+                        </td>
+                        <td bgcolor="#FFFFFF" class="tex3" align="center">
+                            DEPARTAMENTO DE TRANSITO DO DISTRITO FEDERAL
+                        </td>
+                        <td bgcolor="#FFFFFF" class="tex3a" align="center">
+                            13/11/2017 10:00
+                        </td>
+                        <td bgcolor="#FFFFFF" class="tex3a" align="center">
+                            Não</td>
+                        <td bgcolor="#FFFFFF" class="tex3a" align="center">
+                            Não</td>
+                    </tr>
+                </table>
+                <br/>
+                <input type="button" name="voltar2" value="Voltar" class="texField2" onclick="location.href='pregao1.asp';return false;" />
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+<script type="text/javascript" >
+	function consultaProposta(prgcod){
+		location.href = "Consulta_proposta.asp?prgcod=" + prgcod + "&tipo=agendados&pagina=1";
+	}
+</script>

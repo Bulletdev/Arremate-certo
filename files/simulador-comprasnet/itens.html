@@ -1,0 +1,69 @@
+<html>
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="10" bgproperties="fixed" topmargin="10" leftmargin="0"
+    link="#0000A0">
+    <center>
+        <form action="itens.asp" method="post" name="itensform">
+            <input type="hidden" name="sequence" value="125866" />
+            <input type="hidden" name="prgCod" value="765739" />
+            <input type="hidden" name="hdSituacao" value="F" />
+            <table border="0" width="100%" valign="top" cellpadding="2" cellspacing="1" class="td">
+                <tr bgcolor="#ffffff">
+                    <td align="center" colspan="2">
+                        <INPUT type="button" value="Abertos/Suspensos" id=button1 name=button1 class="texField2"
+                            onclick="Listar('A')" style="width=170px" />&nbsp;&nbsp;
+                        <INPUT type="button" value="Fechados" id=button2 name=button2 class="texField2"
+                            onclick="Listar('F')" />&nbsp;&nbsp;
+                        <INPUT type="button" value="Encerrados" id=button3 name=button3 class="texField2"
+                            onclick="Listar('E')" />&nbsp;&nbsp;
+
+                        <INPUT type="button" value="Cancelados" id=button4 name=button4 class="texField2"
+                            onclick="Listar('C')" />&nbsp;&nbsp;
+                        <INPUT type="button" value="Ajuda" name="ajuda" class="texField2" onclick="Ajuda();" />
+                    </td>
+                </tr>
+        </form>
+        <tr bgcolor="#ffffff" class="tex3b">
+            <td align="center" id="titulo" width="50%">Itens com situação Fechado</td>
+            <td align="center" id="datahora" width="50%">Horário de Brasília: 13/06/2019 14:41</td>
+        </tr>
+        <table style="display:none" id="loading" name="loading" class="box">
+            <tr>
+                <td class="cabecbox">Aguarde!</td>
+            </tr>
+        </table>
+        <table border="0" width="100%" valign="top" cellpadding="2" cellspacing="1" class="td">
+            <tr class="tex3b">
+                <td width="7%" align="center" colspan="3">
+                    Item
+                </td>
+                <td width="27%" align="center">
+                    Descrição
+                </td>
+                <td width="12%" align="center">
+                    Situação
+                </td>
+                <td width="15%" align="center">
+                    Seu Último Lance
+                </td>
+                <td width="15%" align="center">
+                    Melhor Lance
+                </td>
+                <td width="14%" align="center">
+                    Lance
+                </td>
+                <td width="10%" align="center" colspan="2"></td>
+            </tr>
+            ##HTML_ITENS##
+        </table>
+        </table>
+    </center>
+    <script language="JavaScript">
+        form.acaoLance.value = acaoLance;
+        form.sequence.value = 125866;
+        form.ticket.value = 96142;
+        form.target = "validacao";
+        form.submit();
+        bloqueiaEnvio = true;
+    </script>
+</body>
+</html>
