@@ -24,7 +24,7 @@ Arremate Certo é um sistema desenvolvido em Java para automação de lances e l
 
 
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura inicial do Projeto
 
 <div>
   
