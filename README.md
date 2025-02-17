@@ -91,4 +91,4 @@ Distribuído sob a licença Apache 2.0. Veja `LICENSE` para mais informações.
 Em caso de dúvidas ou problemas, abra uma issue no repositório.
 
 
-## Feito com 💙 por Bullet Labs
+## Feito com 💙 por Michael Bullet
