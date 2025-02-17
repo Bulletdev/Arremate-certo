@@ -1,5 +1,13 @@
 ## <p align="center"> 🏆 Arremate Certo 🏆</p>
 
+## ⭐ Status do Projeto
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-em_desenvolvimento-yellow">
+  <img src="https://img.shields.io/badge/release_date-março_2024-blue">
+</p>
+
+
 <p align="center">
 Arremate Certo é uma solução moderna de automação para licitações públicas e dispensas.
 </p>
@@ -82,11 +90,5 @@ Distribuído sob a licença Apache 2.0. Veja `LICENSE` para mais informações.
 
 Em caso de dúvidas ou problemas, abra uma issue no repositório.
 
-## ⭐ Status do Projeto
-
-<p align="center">
-  <img src="https://img.shields.io/badge/status-em_desenvolvimento-yellow">
-  <img src="https://img.shields.io/badge/release_date-março_2024-blue">
-</p>
 
 ## Feito com 💙 por Bullet Labs
