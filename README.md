@@ -1,12 +1,9 @@
 ## <p align="center"> 🏆 Arremate Certo 🏆</p>
 
-## ⭐ Status do Projeto
-
 <p align="center">
   <img src="https://img.shields.io/badge/status-em_desenvolvimento-yellow">
   <img src="https://img.shields.io/badge/release_date-fevereiro_2025-blue">
 </p>
-
 
 <p align="center">
 Arremate Certo é uma solução moderna de automação para licitações públicas e dispensas.
@@ -20,23 +17,41 @@ Arremate Certo é uma solução moderna de automação para licitações públic
   <img src="https://img.shields.io/badge/Spring_Boot-3.2-green">
 </p>
 
+
+## 📋 Índice
+1. [Status do Projeto](#-Status-do-projeto)
+2. [Arquitetura do Projeto](#-arquitetura-do-projeto)
+   - [Frontend (Java Application)](#-frontend-java-application)
+   - [Backend (Go API)](#-backend-go-api)
+3. [Funcionalidades Principais](#-funcionalidades-principais)
+4. [Pré-requisitos](#️-pré-requisitos)
+5. [Como Executar](#-como-executar)
+6. [Contribuindo](#-contribuindo)
+7. [Licença](#-licença)
+8. [Suporte](#-suporte)
+   
+
 ## 🏗️ Arquitetura do Projeto
 
 O projeto é dividido em dois componentes principais:
 
 ### 📱 Frontend (Java Application)
+
 - Desenvolvido em Java 17 com Spring Boot 3.2
 - Interface do usuário intuitiva e responsiva
 - Documentação OpenAPI/Swagger integrada
 - Persistência com JPA e H2 Database
 
 ### ⚡ Backend (Go API)
+
 - Desenvolvido em Go 1.21
 - Framework Gin para alta performance
 - ORM com GORM
 - Configuração flexível via variáveis de ambiente
+- Captcha Solver com  Wrapper 2Captcha e go-hcaptcha
 
 ## 🎯 Funcionalidades Principais
+
 - 🔄 **Automação de Lances:** Defina regras personalizadas para lances automáticos
 - 📊 **Relatórios de Participação:** Geração de relatórios detalhados sobre o desempenho em cada licitação
 - 🔗 **Integração com Portais:** Conexão facilitada com diversos portais públicos e privados
@@ -46,11 +61,13 @@ O projeto é dividido em dois componentes principais:
 ## ⚙️ Pré-requisitos
 
 ### Para a Aplicação Java
+
 - Java 17 ou superior
 - Gradle
-- IDE compatível com Spring Boot (recomendado: IntelliJ IDEA ou VS Code)
+- IDE compatível com Spring Boot (recomendado: IntelliJ IDEA )
 
 ### Para a API Go
+
 - Go 1.21 ou superior
 - PostgreSQL
 - Docker (opcional)
@@ -58,6 +75,7 @@ O projeto é dividido em dois componentes principais:
 ## 🚀 Como Executar
 
 ### Aplicação Java
+
 ```bash
 cd java-app
 ./gradlew bootRun
