@@ -14,7 +14,7 @@ Arremate Certo é uma solução moderna de automação para licitações públic
   <img src="https://img.shields.io/badge/licença-Apache_2.0-blue">
   <img src="https://img.shields.io/badge/Java-17-orange">
   <img src="https://img.shields.io/badge/Go-1.21-cyan">
-  <img src="https://img.shields.io/badge/Spring_Boot-3.2-green">
+  <img src="https://img.shields.io/badge/Spring_Boot-3.2-green"> 
 </p>
 
 
