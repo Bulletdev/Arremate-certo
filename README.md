@@ -41,6 +41,7 @@ O projeto é dividido em dois componentes principais:
 - Interface do usuário intuitiva e responsiva
 - Documentação OpenAPI/Swagger integrada
 - Persistência com JPA e H2 Database
+- Criptografia com Bouncy Castle
 
 ### ⚡ Backend (Go API)
 
