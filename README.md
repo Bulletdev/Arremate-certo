@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-Arremate Certo é uma solução moderna de automação para licitações públicas e dispensas.
+Arremate Certo é uma solução moderna de automação para licitações públicas e dispensas. 
 </p>
 
 <p align="center">
