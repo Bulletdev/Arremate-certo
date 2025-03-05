@@ -5,14 +5,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 public class LoginFrame extends JFrame {
 
-    private JTextField txtCnpj;
-    private JPasswordField txtPassword;
-    private JComboBox<String> comboPortal;
-    private JButton btnImportCert;
-    private JButton btnLogin;
+    private final JTextField txtCnpj;
+    private final JPasswordField txtPassword;
+    private final JComboBox<String> comboPortal;
 
     public LoginFrame() {
         setTitle("Login - Licitação");
@@ -34,10 +33,10 @@ public class LoginFrame extends JFrame {
         comboPortal = new JComboBox<>(new String[]{"ComprasNet", "Licitações-e", "Compras Públicas"});
         panel.add(comboPortal);
 
-        btnImportCert = new JButton("Importar Certificado");
+        JButton btnImportCert = new JButton("Importar Certificado");
         panel.add(btnImportCert);
 
-        btnLogin = new JButton("Login");
+        JButton btnLogin = new JButton("Login");
         panel.add(btnLogin);
 
         add(panel, BorderLayout.CENTER);
@@ -56,7 +55,7 @@ public class LoginFrame extends JFrame {
                 // TODO: Implement login action to authenticate with selected portal
                 String cnpj = txtCnpj.getText();
                 char[] password = txtPassword.getPassword();
-                String portal = comboPortal.getSelectedItem().toString();
+                String portal = Objects.requireNonNull(comboPortal.getSelectedItem()).toString();
                 
                 // Stub method call to AuthController for authentication
                 // AuthController.authenticate(cnpj, new String(password), portal);
