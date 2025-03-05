@@ -12,15 +12,6 @@
     </properties>
 
     <dependencies>
-        <!-- Javax Swing library -->
-        <dependency>
-            <groupId>javax.swing</groupId>
-            <artifactId>swing</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${java.home}/../lib/rt.jar</systemPath>
-        </dependency>
-
         <!-- JUnit for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -56,9 +47,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Especifique a versão do plugin -->
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
         </plugins>
