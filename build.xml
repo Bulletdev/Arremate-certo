@@ -1,0 +1,43 @@
+<project name="ArremateCerto" default="run" basedir=".">
+    <description>Build file for ArremateCerto project</description>
+    
+    <!-- Set global properties for this build -->
+    <property name="src.dir" value="src/main/java"/>
+    <property name="build.dir" value="target/classes"/>
+    <property name="lib.dir" value="libs"/>
+    
+    <!-- Initialize directories -->
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${lib.dir}"/>
+    </target>
+    
+    <!-- Compile the source code -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+            <classpath>
+                <fileset dir="${lib.dir}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <fileset dir="${user.home}/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.4">
+                    <include name="spring-boot-starter-2.5.4.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+    
+    <!-- Run the application -->
+    <target name="run" depends="compile">
+        <java classname="com.bulletinfotech.licitacao.LicitacaoApp" fork="true">
+            <classpath>
+                <path location="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <fileset dir="${user.home}/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.4">
+                    <include name="spring-boot-starter-2.5.4.jar"/>
+                </fileset>
+            </classpath>
+        </java>
+    </target>
+</project>
