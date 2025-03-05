@@ -3,7 +3,7 @@
 <p align="center"> 
 
   [![Java CI](https://github.com/Bulletdev/Arremate-certo/actions/workflows/ant.yml/badge.svg)](https://github.com/Bulletdev/Arremate-certo/actions/workflows/ant.y)
-  <img src="https://img.shields.io/badge/status-em_desenvolvimento-yellow">  <img src="https://img.shields.io/badge/release_date-fevereiro_2025-blue"></p>
+  <img src="https://img.shields.io/badge/status-em_desenvolvimento-yellow">  <img src="https://img.shields.io/badge/release_date-Março_2025-blue"></p>
 
 <p align="center">
 Arremate Certo é uma solução moderna de automação para licitações públicas e dispensas. 
