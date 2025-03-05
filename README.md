@@ -3,6 +3,7 @@
 <p align="center"> 
 
   [![Java CI](https://github.com/Bulletdev/Arremate-certo/actions/workflows/ant.yml/badge.svg)](https://github.com/Bulletdev/Arremate-certo/actions/workflows/ant.y)
+  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Bulletdev_Arremate-certo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Bulletdev_Arremate-certo)
   <img src="https://img.shields.io/badge/status-em_desenvolvimento-yellow">  <img src="https://img.shields.io/badge/release_date-Março_2025-blue"></p>
 
 <p align="center">
