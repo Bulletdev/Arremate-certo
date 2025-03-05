@@ -18,14 +18,14 @@ jobs:
           java-version: '17'
           distribution: 'zulu'
       - name: Cache Maven packages
-        uses: actions/cache@v4
+        uses: actions/cache@v2
         with:
           path: ~/.m2
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
-      - name: Set up Maven
-        run: mvn install -DskipTests
+      - name: Build with Maven
+        run: mvn clean install -DskipTests
       - name: Build with Ant
         run: |
           ant -noinput -buildfile build.xml
