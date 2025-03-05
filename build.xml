@@ -19,8 +19,8 @@
                 <fileset dir="${lib.dir}">
                     <include name="**/*.jar"/>
                 </fileset>
-                <fileset dir="${user.home}/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.4">
-                    <include name="spring-boot-starter-2.5.4.jar"/>
+                <fileset dir="${user.home}/.m2/repository">
+                    <include name="**/*.jar"/>
                 </fileset>
             </classpath>
         </javac>
@@ -34,8 +34,8 @@
                 <fileset dir="${lib.dir}">
                     <include name="**/*.jar"/>
                 </fileset>
-                <fileset dir="${user.home}/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.4">
-                    <include name="spring-boot-starter-2.5.4.jar"/>
+                <fileset dir="${user.home}/.m2/repository">
+                    <include name="**/*.jar"/>
                 </fileset>
             </classpath>
         </java>
