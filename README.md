@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/status-em_desenvolvimento-yellow">  <img src="https://img.shields.io/badge/release_date-Março_2025-blue"></p> 
 
 <p align="center">
-Arremate Certo é uma solução moderna de automação para licitações públicas e dispensas.  
+Arremate Certo é uma solução moderna de automação para licitações públicas e dispensas.   
 </p>
 
 <p align="center">
