@@ -23,8 +23,10 @@ Arremate Certo é uma solução moderna de automação para licitações públic
 ## 📋 Índice
 1. [Status do Projeto](#-Status-do-projeto)
 2. [Arquitetura do Projeto](#-arquitetura-do-projeto)
-   - [Frontend (Java Application)](#-frontend-java-application)
-   - [Backend (Go API)](#-backend-go-api)
+   - [Frontend (Java Application)](#-Frontend ( Vue.js ))
+   - [Backend (Go API)](#-Microserviços-em-Golang)
+   - [Backend (Java API)](#-Backend ( Java API principal ))
+
 3. [Funcionalidades Principais](#-funcionalidades-principais)
 4. [Pré-requisitos](#️-pré-requisitos)
 5. [Como Executar](#-como-executar)
