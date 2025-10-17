@@ -37,18 +37,19 @@ Arremate Certo é uma solução moderna de automação para licitações públic
 
 O projeto é dividido em dois componentes principais:
 
-###  Frontend (Vue.js )
+###  Frontend ( Vue.js )
+
+
+- Desenvolvido em Java vue 3 
+- Interface do usuário intuitiva e responsiva
+- Vite: Ferramenta de build moderna e rápida para criar e executar o projeto
+- Pinia: Biblioteca de gerenciamento de estado para centralizar e otimizar o fluxo de dados da aplicação
+- Vue Router: Para gerenciar as rotas e navegação na aplicação, caso ela tenha múltiplas páginas
+- HTML e CSS: Para a estrutura e o estilo da interface
+
+###  Backend ( Java API principal )
 
 - Desenvolvido em Java 17 com Spring Boot 3.2
-- Interface do usuário intuitiva e responsiva
-- Documentação OpenAPI/Swagger integrada
-- Persistência com JPA e H2 Database
-- Criptografia com Bouncy Castle
-
-###  Backend (Java API)
-
-- Desenvolvido em Java 17 com Spring Boot 3.2
-- Interface do usuário intuitiva e responsiva
 - Documentação OpenAPI/Swagger integrada
 - Persistência com JPA e  PostgreSQL
 - Criptografia com Bouncy Castle
