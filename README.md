@@ -42,11 +42,11 @@ O projeto é dividido em dois componentes principais:
 ###  Frontend ( Vue.js )
 
 
-- Desenvolvido em Java vue 3 
+- Desenvolvido em vue 3 
 - Interface do usuário intuitiva e responsiva
-- Vite: Ferramenta de build moderna e rápida para criar e executar o projeto
-- Pinia: Biblioteca de gerenciamento de estado para centralizar e otimizar o fluxo de dados da aplicação
-- Vue Router: Para gerenciar as rotas e navegação na aplicação, caso ela tenha múltiplas páginas
+- Vite: Ferramenta de build rápida para criar e executar o projeto
+- Pinia: para gerenciamento de estado para centralizar e otimizar o fluxo de dados da aplicação
+- Vue Router: Para gerenciar as rotas e navegação na aplicação
 - HTML e CSS: Para a estrutura e o estilo da interface
 
 ###  Backend ( Java API principal )
