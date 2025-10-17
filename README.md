@@ -37,7 +37,7 @@ Arremate Certo é uma solução moderna de automação para licitações públic
 
 O projeto é dividido em dois componentes principais:
 
-### 📱 Frontend (Java Application)
+###  Frontend (Vue.js )
 
 - Desenvolvido em Java 17 com Spring Boot 3.2
 - Interface do usuário intuitiva e responsiva
@@ -45,7 +45,15 @@ O projeto é dividido em dois componentes principais:
 - Persistência com JPA e H2 Database
 - Criptografia com Bouncy Castle
 
-### ⚡ Backend (Go API)
+###  Backend (Java API)
+
+- Desenvolvido em Java 17 com Spring Boot 3.2
+- Interface do usuário intuitiva e responsiva
+- Documentação OpenAPI/Swagger integrada
+- Persistência com JPA e  PostgreSQL
+- Criptografia com Bouncy Castle
+  
+### Microserviços em Golang
 
 - Desenvolvido em Go 1.21
 - Framework Gin para alta performance
@@ -53,7 +61,7 @@ O projeto é dividido em dois componentes principais:
 - Configuração flexível via variáveis de ambiente
 - Captcha Solver com  Wrapper 2Captcha e go-hcaptcha
 
-## 🎯 Funcionalidades Principais
+##  Funcionalidades Principais
 
 - 🔄 **Automação de Lances:** Defina regras personalizadas para lances automáticos
 - 📊 **Relatórios de Participação:** Geração de relatórios detalhados sobre o desempenho em cada licitação
@@ -61,7 +69,7 @@ O projeto é dividido em dois componentes principais:
 - 🔐 **Gestão de Dados:** Armazenamento seguro e eficiente das informações
 - 📈 **Performance Otimizada:** Backend em Go para processamento rápido de requisições
 
-## ⚙️ Pré-requisitos
+##  Pré-requisitos
 
 ### Para a Aplicação Java
 
@@ -75,7 +83,7 @@ O projeto é dividido em dois componentes principais:
 - PostgreSQL
 - Docker (opcional)
 
-## 🚀 Como Executar
+##  Como Executar
 
 ### Aplicação Java
 
@@ -95,7 +103,7 @@ A API estará disponível em `http://localhost:8081`
 
 
 
-## 🛠️ Contribuindo
+##  Contribuindo
 
 1. Faça um fork do projeto
 2. Crie uma branch: `git checkout -b feature/nova-funcionalidade`
@@ -103,11 +111,11 @@ A API estará disponível em `http://localhost:8081`
 4. Envie para o repositório: `git push origin feature/nova-funcionalidade`
 5. Crie um Pull Request
 
-## 📜 Licença
+##  Licença
 
 Distribuído sob a licença Apache 2.0. Veja `LICENSE` para mais informações.
 
-## 🔧 Suporte
+##  Suporte
 
 Em caso de dúvidas ou problemas, abra uma issue no repositório.
 
